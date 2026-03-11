@@ -1,10 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Welcome to LovaBeauty</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LovaBeauty</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    background: #fff;
+    color: #333;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff4fa3;
+  }
+
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #ff4fa3;
+  }
+
+  .hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #ff9ecb, #ffd6e8);
+    color: white;
+    animation: fadeIn 2s ease forwards;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .hero button {
+    padding: 15px 35px;
+    border: none;
+    background: white;
+    color: #ff4fa3;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .hero button:hover {
+    transform: scale(1.1);
+  }
+
+  .products {
+    padding: 80px 10%;
+    text-align: center;
+  }
+
+  .products h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: #ff4fa3;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 30px;
+  }
+
+  .product {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .product:hover {
+    transform: translateY(-10px);
+  }
+
+  .product img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .product h3 {
+    margin: 15px 0;
+  }
+
+  footer {
+    background: #ff4fa3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
 </head>
+
 <body>
-  <h1>Hello, LovaBeauty!</h1>
-  <p>This is your website homepage.</p>
+
+<header>
+  <div class="logo">LovaBeauty</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Glow with LovaBeauty</h1>
+    <p>Luxury beauty products for your perfect glow</p>
+    <button>Shop Now</button>
+  </div>
+</section>
+
+<section class="products">
+  <h2>Popular Products</h2>
+
+  <div class="product-grid">
+    <div class="product">
+      <img src="https://via.placeholder.com/250" alt="Glow Serum" />
+      <h3>Glow Serum</h3>
+      <p>$29</p>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/250" alt="Matte Lipstick" />
+      <h3>Matte Lipstick</h3>
+      <p>$19</p>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/250" alt="Skin Cream" />
+      <h3>Skin Cream</h3>
+      <p>$35</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 LovaBeauty. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
