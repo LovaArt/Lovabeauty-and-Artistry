@@ -21,11 +21,38 @@
 
 <style>
   * {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
-  body {background:#fff; color:#333; overflow-x:hidden;}
-  header {display:flex; justify-content:space-between; align-items:center; padding:20px 10%; background:white; box-shadow:0 2px 10px rgba(0,0,0,0.1); position:sticky; top:0; z-index:1000;}
-  .logo {font-size:24px; font-weight:700; color:#ff4fa3; animation:pulse 2s infinite;}
-  nav a {margin:0 15px; text-decoration:none; color:#333; font-weight:500; transition: color 0.3s ease;}
-  nav a:hover {color:#ff4fa3;}
+body {background:#fff; color:#333; overflow-x:hidden;}
+
+header {
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo {
+font-size:24px;
+font-weight:700;
+color:#ff4fa3;
+animation:pulse 2s infinite;
+}
+
+nav a {
+margin:0 15px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition: color 0.3s ease;
+}
+
+nav a:hover {
+color:#ff4fa3;
+}
 
   /* Hero Section */
   .hero {position:relative; height:90vh; display:flex; align-items:center; justify-content:center; text-align:center; background:linear-gradient(135deg,#ff9ecb,#ffd6e8); overflow:hidden;}
@@ -99,32 +126,39 @@
 
 <section class="services" id="services">
   <h2>Our Services</h2>
+
   <div class="service-grid">
+
     <div class="service">
-      <img src="https://via.placeholder.com/250" alt="Wigs" />
+      <img src="images/wig.jpg" alt="Wigs" />
       <h3>Wigs</h3>
       <p>Custom and ready-to-wear wigs for every style.</p>
     </div>
+
     <div class="service">
-      <img src="https://via.placeholder.com/250" alt="Temporary Tattoos" />
+      <img src="images/tattoo1.jpg" alt="Temporary Tattoos" />
       <h3>Temporary Tattoos</h3>
       <p>Beautiful drawings of temporary tattoos for all occasions.</p>
     </div>
+
     <div class="service">
-      <img src="https://via.placeholder.com/250" alt="Microblading" />
+      <img src="images/microblading.jpg" alt="Microblading" />
       <h3>Microblading</h3>
       <p>Perfectly shaped and natural-looking eyebrows.</p>
     </div>
+
     <div class="service">
-      <img src="https://via.placeholder.com/250" alt="Classic Eyelash" />
+      <img src="images/brows.jpg" alt="Classic Eyelash" />
       <h3>Classic Eyelash Extensions</h3>
       <p>Enhance your eyes with flawless classic eyelash extensions.</p>
     </div>
+
     <div class="service">
-      <img src="https://via.placeholder.com/250" alt="Hair Services" />
+      <img src="images/hair.jpg" alt="Hair Services" />
       <h3>Other Hair Services</h3>
       <p>Styling, braiding, and other hair treatments to suit you.</p>
     </div>
+
   </div>
 </section>
 
